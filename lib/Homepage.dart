@@ -1,5 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'SendMoney.dart';
+import 'TransferMoney.dart';
+import 'SelfAccountTransfer.dart';
+import 'CheckBalance.dart';
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}): super(key:key);
   @override
@@ -135,7 +139,9 @@ class MyHomePage extends StatelessWidget {
                                   height: 27,
                                 ),
                                 ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(context,MaterialPageRoute(builder: (context)=>SendMoney()),);
+                                  },
                                   style: ElevatedButton.styleFrom(
                                     primary: Colors.deepPurple,
                                     shape: CircleBorder(),
@@ -151,7 +157,7 @@ class MyHomePage extends StatelessWidget {
                                   height: 27,
                                 ),
                                 ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context)=>TransferMoney()),);},
                                   style: ElevatedButton.styleFrom(
                                     primary: Colors.deepPurple,
                                     shape: CircleBorder(),
@@ -167,7 +173,7 @@ class MyHomePage extends StatelessWidget {
                                   height: 27,
                                 ),
                                 ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context)=>SelfAccountTransfer()),);},
                                   style: ElevatedButton.styleFrom(
                                     primary: Colors.deepPurple,
                                     shape: CircleBorder(),
@@ -183,7 +189,7 @@ class MyHomePage extends StatelessWidget {
                                   height: 27,
                                 ),
                                 ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context)=>CheckBalance()),);},
                                   style: ElevatedButton.styleFrom(
                                     primary: Colors.deepPurple,
                                     shape: CircleBorder(),
